@@ -10,11 +10,12 @@ import StyledComponent from '../components/StyledComponent';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 
+import apiMiddleware from './api/middleware';
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
-
   const [currentTheme, setCurrentTheme] = useState(themeDefault);
   const [showSidebar, setShowSidebar] = useState(true);
 
@@ -53,3 +54,4 @@ export default function App({ Component, pageProps }) {
     </ThemeProvider>
   )
 }
+
